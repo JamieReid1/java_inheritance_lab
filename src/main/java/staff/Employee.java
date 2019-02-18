@@ -31,7 +31,7 @@ public abstract class Employee {
         return this.salary * 0.01;
 
     }
-    
+
 
 
 
