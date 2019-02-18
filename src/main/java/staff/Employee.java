@@ -5,6 +5,11 @@ public abstract class Employee {
     String nationalInsuranceNumber;
     double salary;
 
+    public Employee(String name, String nationalInsuranceNumber, double salary) {
+        this.name = name;
+        this.nationalInsuranceNumber = nationalInsuranceNumber;
+        this.salary = salary;
+    }
 
     public String getName() {
         return name;
@@ -26,14 +31,7 @@ public abstract class Employee {
         return this.salary * 0.01;
 
     }
-
-
-    public void addBonus(){
-        double bonus = payBonus();
-        System.out.println(bonus);
-//        this.salary + bonus;
-    }
-
+    
 
 
 
